@@ -4,8 +4,6 @@
 .wrapper {
     min-height: 100%;
     overflow: hidden;
-    //     [display: flex;
-    //     flex-direction: column;] - если надо прижать футер
 }
 
 /*-----------------------------------------------------------------*/
@@ -16,38 +14,6 @@
     box-sizing: content-box;
 }
 
-.ibg {
-    position: relative;
-    img {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        object-fit: cover;
-    }
-}
-
-// &__image {
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     width: 100%;
-//     height: 100%;
-//     img {
-//         @media (max-width: px) {
-//             object-position: right;
-//         }
-//     }
-// }
-
-/*-----------------------------------------------------------------*/
-
-//@media (max-width: px) {
-//      max-width: px;
-//  }
-
-/*-----------------------------------------------------------------*/
 body {
     background-color: black;
 }
@@ -93,7 +59,7 @@ body {
 
     &__2line {
         display: flex;
-        gap: 600px;
+        gap: 585px;
         transform: rotate(60deg);
         span {
             transform: rotate(-60deg);
@@ -105,7 +71,7 @@ body {
 
     &__3line {
         display: flex;
-        gap: 600px;
+        gap: 585px;
         transform: rotate(30deg);
         span {
             transform: rotate(-30deg);
