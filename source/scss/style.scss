@@ -1,0 +1,203 @@
+@import "_nullstyle";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700);
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    //     [display: flex;
+    //     flex-direction: column;] - если надо прижать футер
+}
+
+/*-----------------------------------------------------------------*/
+.container {
+    max-width: 1000зчpx;
+    margin: 0px auto;
+    padding: 0 15px;
+    box-sizing: content-box;
+}
+
+.ibg {
+    position: relative;
+    img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+    }
+}
+
+// &__image {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     img {
+//         @media (max-width: px) {
+//             object-position: right;
+//         }
+//     }
+// }
+
+/*-----------------------------------------------------------------*/
+
+//@media (max-width: px) {
+//      max-width: px;
+//  }
+
+/*-----------------------------------------------------------------*/
+body {
+    background-color: black;
+}
+
+.circle {
+    &__container {
+    }
+
+    &__main {
+        margin-top: 100px;
+        background-color: #fff;
+        border-radius: 1000px;
+        width: 650px;
+        height: 650px;
+        margin: 50px auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        @media (max-width: 750px) {
+            width: 300px;
+            height: 300px;
+        }
+    }
+
+    &__line {
+        font-family: "Open Sans";
+        display: flex;
+        font-size: 30px;
+        position: absolute;
+        @media (max-width: 750px) {
+            font-size: 18px;
+        }
+    }
+
+    &__1line {
+        transform: translateY(-300px);
+        @media (max-width: 750px) {
+            transform: translateY(-140px);
+        }
+    }
+
+    &__2line {
+        display: flex;
+        gap: 600px;
+        transform: rotate(60deg);
+        span {
+            transform: rotate(-60deg);
+        }
+        @media (max-width: 750px) {
+            gap: 260px;
+        }
+    }
+
+    &__3line {
+        display: flex;
+        gap: 600px;
+        transform: rotate(30deg);
+        span {
+            transform: rotate(-30deg);
+        }
+        @media (max-width: 750px) {
+            gap: 260px;
+        }
+    }
+
+    &__4line {
+        display: flex;
+        gap: 600px;
+        @media (max-width: 750px) {
+            gap: 260px;
+        }
+    }
+
+    &__minute {
+        transform: rotate(0deg);
+        position: absolute;
+        left: 50%;
+        transition: 1s;
+    }
+
+    &__additionalbig {
+        height: 300px;
+        @media (max-width: 750px) {
+            height: 130px;
+        }
+    }
+
+    &__arrow-big {
+        width: 8px;
+        height: 300px;
+        background-color: rgb(23, 23, 148);
+        @media (max-width: 750px) {
+            height: 130px;
+            width: 5px;
+        }
+    }
+
+    &__hour {
+        transform: rotate(0deg);
+        position: absolute;
+        left: 50%;
+        transition: 1s;
+    }
+
+    &__additionalsmall {
+        height: 162.5px;
+        @media (max-width: 750px) {
+            height: 80px;
+        }
+    }
+
+    &__arrow-small {
+        width: 8px;
+        height: 162.5px;
+        background-color: red;
+        @media (max-width: 750px) {
+            height: 80px;
+            width: 5px;
+        }
+    }
+
+    &__5line {
+        display: flex;
+        gap: 600px;
+        transform: rotate(-30deg);
+        span {
+            transform: rotate(30deg);
+        }
+        @media (max-width: 750px) {
+            gap: 260px;
+        }
+    }
+
+    &__6line {
+        display: flex;
+        gap: 600px;
+        transform: rotate(-60deg);
+        span {
+            transform: rotate(60deg);
+        }
+        @media (max-width: 750px) {
+            gap: 260px;
+        }
+    }
+    &__7line {
+        transform: translateY(300px);
+        @media (max-width: 750px) {
+            transform: translateY(140px);
+        }
+    }
+}
